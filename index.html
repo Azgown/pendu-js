@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------ Bootstrap ------->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <title>Pendu</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center">Le jeu de Pendu</h1>
+                <div class="text-center">
+                    <h2>Devinez le mot</h2>
+                    <div id="clavier"></div>
+                    <button class="btn-info btn-primary" onClick="reset()">reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="underscore text-center display-4"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="rightGuess"><span id="erreurs">0</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <div class="wrongGuess">Mauvaises lettres : <span id="erreurs">0</span></div>
+            </div>
+        </div>
+    </div>
+    </br>
+    <hr>
+    </br>
+    <div class="container">
+        <div class="row">
+            <div id="letter" class="col-12 text-center">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
