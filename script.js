@@ -74,7 +74,7 @@ keyboard.addEventListener('click', (e) => {
         domRightGuess[0].innerHTML = rightWord;
 
         if(underScore.join('') === choosenWord) {
-            alert('You win FDP');
+            alert("t'as gagné");
         }
 
     }else{
@@ -82,7 +82,7 @@ keyboard.addEventListener('click', (e) => {
         domWrongGuess[0].innerHTML = wrongWord;
         
         if(wrongWord.length >= 8){
-            alert("t'as perdu pd");
+            alert("t'as perdu");
             keyboard.style.display = "none";
 
         }
